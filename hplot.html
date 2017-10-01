@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>%title%</title>
+<script type="text/javascript" src="./hplot.js"></script>
+<noscript>JavaScript disable</noscript>
+<style>
+  div {
+    position: static;
+    margin:1mm 1mm 1mm 1mm;
+    padding:1mm 1mm 1mm 1mm;
+  }
+</style>
+</head>
+<body>
+  <h1>%title%</h1>
+  <div id="comment">%comment%</div>
+  <canvas id="cn" width="%w%" height="%h%" style="border:1px solid black">
+  </canvas>
+</body>
+  <script>
+    plotHs(document.getElementById("cn"), %params%, "%data%") 
+  </script>
+</html>
